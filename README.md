@@ -9,7 +9,7 @@ so we can pick a cocktail and display the recipe
 
 ## Usage
 
-Simple enough, interface is on port 80 after it comes up, 
+Simple enough, interface is on port 8083 after it comes up, 
 feel free to change the port in the docker-compose.yml file
 
 	git clone git@github.com:doghousedean/cocktail_menu.git
