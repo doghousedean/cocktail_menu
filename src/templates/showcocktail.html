@@ -1,0 +1,35 @@
+{% extends 'index.html' %}
+
+{% block content %}
+<div class="container mx-auto dark">
+    <div class="text-center neon p-4">
+        <h1 class="title">{{ heading }}</h1>
+    </div>
+    <hr>
+
+    {{ navBar() }}
+
+    <h2 class="subtitle">
+        <u>{{ data.meta.title }}   </u>
+    </h2>
+    <hr>
+    <div class="row">
+        <div class="col">
+            <h3 class="title dark">Ingredients:</h3>
+            <ul class="list-group light">
+                {% for thing in data.ingredients %}
+                    <li class="list-group-item">{{ thing[0] }} {{ thing[1] }}{{ thing[2] }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="col">
+            <h3 class="title dark">Steps:</h3>
+            <ol class="list-group light">
+                {% for thing in data.steps %}
+                    <li class="list-group-item">{{ thing }}</li>
+                {% endfor %}
+            </ol>
+        </div>
+    </div>
+</div>
+{% endblock %}

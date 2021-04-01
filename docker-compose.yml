@@ -1,0 +1,9 @@
+---
+version: '3.3'
+services:
+        cocktails:
+                image: cocktailsgui:latest
+                build: .
+                ports: ["80:5000"]
+                volumes: ["$PWD/src/config.json:/app/config.json"]
+                restart: unless-stopped

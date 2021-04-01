@@ -1,0 +1,68 @@
+{% macro cocktailListItem(data) %}
+    <a href="/cocktail/{{ data.meta.title }}" class="list-group-item list-group-item-action flex-column align-items-start">
+        <div class="d-flex w-100 justify-content-between">
+          <h5 class="mb-1">{{ data.meta.title }}</h5>
+          <small>{{ data.meta.base }}</small>
+        </div>
+    </a>
+{% endmacro %}
+
+{% macro cocktailListBaseItem(title, data) %}
+<div class="col-sm-6">
+    <div>
+        <h3 class="list-group-item list-group-item-action flex-column align-items-start">{{ title }}</h3>
+    </div>
+</div>
+<div class="col-sm-6">
+    {%- for b in data -%}
+        <a href="/cocktail/{{ b }}" class="list-group-item list-group-item-action flex-column align-items-start">{{ b }}</a>
+    {%- endfor -%}
+</div>
+{% endmacro %}
+
+{% macro showCocktailItemH(data) %}
+    <div class="col">
+        <h3 class="title dark">Ingredients:</h3>
+        <ul class="list-group light">
+            {% for thing in data.ingredients %}
+                <li class="list-group-item">{{ thing[0] }} {{ thing[1] }}{{ thing[2] }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="col">
+        <h3 class="title dark">Steps:</h3>
+        <ol class="list-group light">
+            {% for thing in data.steps %}
+                <li class="list-group-item">{{ thing }}</li>
+            {% endfor %}
+        </ol>
+    </div>
+{% endmacro %}
+
+{% macro showCocktailItemV(data) %}
+    {% if data != "none" %}
+        <div class="col">
+            <h3 class="title dark">Ingredients:</h3>
+            <ul class="list-group light">
+                {% for thing in data.ingredients %}
+                    <li class="list-group-item">{{ thing[0] }} {{ thing[1] }}{{ thing[2] }}</li>
+                {% endfor %}
+            </ul>
+            <h3 class="title dark">Steps:</h3>
+            <ol class="list-group light">
+                {% for thing in data.steps %}
+                    <li class="list-group-item">{{ thing }}</li>
+                {% endfor %}
+            </ol>
+        </div>
+    {% endif %}
+{% endmacro %}
+
+{% macro navBar() %}
+<div class="d-flex w-100 justify-content-between">
+    <h2 class="mb-1 title">Fancy a topup?</h2>
+    <a class="btn btn-lg btn-primary" href="/">Random</a>
+    <a class="btn btn-lg btn-success" href="/base">By Base</a>
+    <a class="btn btn-lg btn-secondary" href="/cocktails">List</a>
+</div>
+{% endmacro %}

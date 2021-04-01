@@ -1,0 +1,23 @@
+{% extends 'index.html' %}
+{% from "macros.html" import cocktailListBaseItem %}
+{% block content %}
+<div class="container mx-auto dark">
+    <div class="text-center neon p-4">
+        <h1 class="title">{{ heading }}</h1>
+    </div>
+    <hr>
+
+    {{ navBar() }}
+
+    <h2>Choose your poison</h2>
+
+        {% for base in data %}
+            {% if base != "none" %}
+                <div class="row">
+                    {{ cocktailListBaseItem(base, data[base]) }}
+                </div>
+                <hr>
+            {% endif %}
+        {% endfor %}
+</div>
+{% endblock %}

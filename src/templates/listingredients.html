@@ -1,0 +1,33 @@
+{% extends 'index.html' %}
+{% from "macros.html" import cocktailListItem %}
+{% block content %}
+<div class="container mx-auto dark">
+    <div class="text-center neon p-4">
+        <h1 class="title">{{ heading }}</h1>
+    </div>
+    <hr>
+
+    {{ navBar() }}
+
+    <h2>Ingredients</h2>
+    <div class="row">
+        <div class="col d-flex w-75">
+            <table class="table table-dark table-hover" id="ingredients">
+                <thead>
+                <tr>
+                    <th onclick="sortTable('ingredients', 0)">Item</th>
+                    <th onclick="sortTable('ingredients', 1)">Quantity (min)</th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for ingredient in data %}
+                    <tr>
+                        <td>{{ingredient}}<td>{{data[ingredient].qty}}{{data[ingredient].unit}}</td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+{% endblock %}
