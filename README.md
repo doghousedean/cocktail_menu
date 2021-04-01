@@ -15,3 +15,12 @@ feel free to change the port in the docker-compose.yml file
 	git clone git@github.com:doghousedean/cocktail_menu.git
 	cd cocktail_menu
 	docker-compose up -d
+
+## Configuration
+
+You can change the header text by editing the config.json file, this is then bound to a file in the docker container
+
+	{
+	  "heading": "Cocktail Menu"
+	}
+	
