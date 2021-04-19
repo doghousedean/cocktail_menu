@@ -1,10 +1,11 @@
 from flask import Flask, render_template
 from cocktails import Cocktails
+import sys, os
 import json
 
 app = Flask(__name__)
 
-with open("app/config.json", "r") as cf:
+with open(os.path.join(sys.path[0], "config.json"), "r") as cf:
     config = json.load(cf)
 
 
