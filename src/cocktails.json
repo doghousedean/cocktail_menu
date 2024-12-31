@@ -215,5 +215,192 @@
 			"title": "none",
 			"base": "none"
 		}
-	}}
+	}},
+	{
+		"mai_tai": {
+		  "ingredients": [
+			["White Rum", "30", "ml"],
+			["Dark Rum", "30", "ml"],
+			["Orange Curacao", "15", "ml"],
+			["Orgeat Syrup", "15", "ml"],
+			["Lime Juice", "30", "ml"],
+			["Mint Sprig", "1", " Garnish"]
+		  ],
+		  "steps": [
+			"Add all ingredients except the mint to a shaker with ice.",
+			"Shake and strain into a glass filled with crushed ice.",
+			"Garnish with a mint sprig."
+		  ],
+		  "meta": {
+			"title": "Mai Tai",
+			"base": "White Rum"
+		  }
+		}
+	  },
+	  {
+		"zombie": {
+		  "ingredients": [
+			["White Rum", "25", "ml"],
+			["Gold Rum", "25", "ml"],
+			["Dark Rum", "25", "ml"],
+			["Apricot Brandy", "15", "ml"],
+			["Pineapple Juice", "45", "ml"],
+			["Lime Juice", "30", "ml"],
+			["Grenadine", "15", "ml"],
+			["Mint Sprig", "1", " Garnish"]
+		  ],
+		  "steps": [
+			"Shake all ingredients with ice.",
+			"Strain into a tall glass filled with ice.",
+			"Garnish with a mint sprig."
+		  ],
+		  "meta": {
+			"title": "Zombie",
+			"base": "White Rum"
+		  }
+		}
+	  },
+	  {
+		"painkiller": {
+		  "ingredients": [
+			["Pusser's Rum", "60", "ml"],
+			["Pineapple Juice", "90", "ml"],
+			["Orange Juice", "30", "ml"],
+			["Cream of Coconut", "30", "ml"],
+			["Nutmeg", "1", " Pinch"],
+			["Pineapple Wedge", "1", " Garnish"]
+		  ],
+		  "steps": [
+			"Add all ingredients to a shaker with ice.",
+			"Shake and strain into a glass filled with crushed ice.",
+			"Dust with nutmeg and garnish with a pineapple wedge."
+		  ],
+		  "meta": {
+			"title": "Painkiller",
+			"base": "Rum"
+		  }
+		}
+	  },
+	  {
+		"blue_hawaiian": {
+		  "ingredients": [
+			["White Rum", "30", "ml"],
+			["Blue Curacao", "30", "ml"],
+			["Coconut Cream", "30", "ml"],
+			["Pineapple Juice", "90", "ml"],
+			["Pineapple Wedge", "1", " Garnish"],
+			["Cherry", "1", " Garnish"]
+		  ],
+		  "steps": [
+			"Combine all ingredients in a blender with crushed ice.",
+			"Blend until smooth.",
+			"Pour into a hurricane glass and garnish with a pineapple wedge and cherry."
+		  ],
+		  "meta": {
+			"title": "Blue Hawaiian",
+			"base": "White Rum"
+		  }
+		}
+	  },
+	  {
+		"scorpion": {
+		  "ingredients": [
+			["White Rum", "60", "ml"],
+			["Brandy", "30", "ml"],
+			["Orange Juice", "90", "ml"],
+			["Lime Juice", "30", "ml"],
+			["Orgeat Syrup", "15", "ml"],
+			["Mint Sprig", "1", " Garnish"]
+		  ],
+		  "steps": [
+			"Shake all ingredients with ice.",
+			"Strain into a large glass filled with crushed ice.",
+			"Garnish with a mint sprig."
+		  ],
+		  "meta": {
+			"title": "Scorpion",
+			"base": "White Rum"
+		  }
+		}
+	  },
+	  {
+		"cobra_fang": {
+		  "ingredients": [
+			["Dark Rum", "60", "ml"],
+			["Lime Juice", "30", "ml"],
+			["Passion Fruit Syrup", "30", "ml"],
+			["Falernum", "15", "ml"],
+			["Angostura Bitters", "2", " Dashes"],
+			["Mint Sprig", "1", " Garnish"]
+		  ],
+		  "steps": [
+			"Shake all ingredients with ice.",
+			"Strain into a tiki mug filled with crushed ice.",
+			"Garnish with a mint sprig."
+		  ],
+		  "meta": {
+			"title": "Cobra's Fang",
+			"base": "Dark Rum"
+		  }
+		}
+	  },
+	  {
+		"pearl_diver": {
+		  "ingredients": [
+			["White Rum", "45", "ml"],
+			["Dark Rum", "15", "ml"],
+			["Lime Juice", "15", "ml"],
+			["Orange Juice", "15", "ml"],
+			["Gardenia Mix", "30", "ml"],
+			["Mint Sprig", "1", " Garnish"]
+		  ],
+		  "steps": [
+			"Blend all ingredients with crushed ice until smooth.",
+			"Pour into a tiki glass and garnish with a mint sprig."
+		  ],
+		  "meta": {
+			"title": "Pearl Diver",
+			"base": "White Rum"
+		  }
+		}
+	  },
+	  {
+		"jungle_bird": {
+		  "ingredients": [
+			["Dark Rum", "45", "ml"],
+			["Campari", "22", "ml"],
+			["Pineapple Juice", "45", "ml"],
+			["Lime Juice", "15", "ml"],
+			["Simple Syrup", "15", "ml"],
+			["Pineapple Leaf", "1", " Garnish"]
+		  ],
+		  "steps": [
+			"Shake all ingredients with ice.",
+			"Strain into a glass with ice and garnish with a pineapple leaf."
+		  ],
+		  "meta": {
+			"title": "Jungle Bird",
+			"base": "Dark Rum"
+		  }
+		}
+	  },
+	  {
+    "duck_fart": {
+      "ingredients": [
+            ["Kahlua", "15", "ml"],
+            ["Baileys", "15", "ml"],
+            ["Whiskey", "15", "ml"]
+      ],
+      "steps": [
+            "Start with Kahlua on the bottom layer.",
+            "Slowly add the Baileys by pouring over the back of a spoon.",
+            "Add the Whiskey as a top layer over the back of a spoon.",
+            "Down in one"
+      ],
+      "meta": {
+            "title": "Duck Fart",
+            "base": "Whiskey"
+      }
+    }
+}
 ]
