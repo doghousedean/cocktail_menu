@@ -103,7 +103,7 @@ def generate_qr(data):
 # Route to display the template with QR code
 @app.route("/wifi")
 def wifi():
-    wifi_data = "WIFI:T:WPA;S:MooreHenHouse;P:merebrow;;"  # Example Wi-Fi data
+    wifi_data = "WIFI:T:WPA;S:YOUR_SSID;P:YOUR_PASSWORD;;"  # Example Wi-Fi data
     url = "http://192.168.2.243/"
     return render_template("help.html", wifi_qr_code=f"/qr/{wifi_data}", menu_qr_code=f"/qr/{url}")
 
